@@ -11,3 +11,8 @@ Scenario: Upload a pdf document
         Given I am on the homepage
         When I upload the "documentoVacio.pdf" file, by the Seleccione su archivo PDF button 
         Then I see the page calibration form
+
+Scenario: Failing Upload with a non pdf archive
+        Given I am on the homepage
+        When I upload the "notAPdfFile.exe" file, by the Seleccione su archivo PDF button 
+        Then I see the error message "¡Lo siento! Seleccione un archivo PDF por favor."

@@ -33,3 +33,10 @@ Then("I see the page calibration form") do
     	raise "UCB address should be Calibración de páginas"	
     end
 end
+
+Then(/^I see the error message "([^"]*)"$/) do |error|
+  message = find(:xpath, '//*[@id="demo"]/div/div[2]/div[2]/div[1]/center/div/center/p')
+  if message.text != error
+    	raise "Error message should be "+error	
+    end
+end
