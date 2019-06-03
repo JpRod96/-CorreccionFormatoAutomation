@@ -10,8 +10,8 @@ When(/^I click on the UCB image$/) do
 end
 
 When("I upload the {string} file, by the Seleccione su archivo PDF button") do |fileName|
-  #find(:xpath,'//*[@id="demo"]/div/div[2]/div[2]/div[1]/center/button').set(File.absolute_path('./features/step_definitions/pdfs/'+fileName))
   click_button('Seleccione su archivo PDF')
+  page.attach_file(File.absolute_path('./features/step_definitions/pdfs/'+fileName), make_visible: true)
   sleep(50)
 end
 
