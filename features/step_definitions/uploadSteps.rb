@@ -12,7 +12,6 @@ end
 When("I upload the {string} file") do |fileName|
   click_button('Seleccione su archivo PDF')
   page.attach_file(File.absolute_path('./features/step_definitions/pdfs/'+fileName), make_visible: true)
-  sleep(2)
 end
 
 When("I go straight forward trough the calibration setup") do
