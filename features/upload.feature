@@ -5,10 +5,6 @@ Feature: As a student
 Background:
     Given I am on the homepage
 
-#Scenario: See the welcome page
-#  Given I am on the homepage
-#  Then I see the message "Revisa el formato de tu trabajo académico ¡aquí!"
-
 Scenario: Upload a pdf document
         When I upload the "documentoVacio.pdf" file
         And I go straight forward trough the calibration setup       
