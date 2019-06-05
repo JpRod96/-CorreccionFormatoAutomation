@@ -9,15 +9,25 @@ When(/^I click on the UCB image$/) do
   find(:xpath, '//*[@id="demo"]/div/div[1]/center/a/img').click
 end
 
-When("I upload the {string} file, by the Seleccione su archivo PDF button") do |fileName|
+When("I upload the {string} file") do |fileName|
   click_button('Seleccione su archivo PDF')
   page.attach_file(File.absolute_path('./features/step_definitions/pdfs/'+fileName), make_visible: true)
-  sleep(50)
+  sleep(2)
 end
 
-#Then I will click the "Tickets | Houston Dynamo" link
-Then(/^I will click the "([^"]*)" link$/) do |searchLink|
-  click_link(searchLink)
+When("I go straight forward trough the calibration setup") do
+  for i in 1..5 do
+    click_button('Siguiente »')
+  end
+  click_button('Enviar »')
+end
+
+When("I click the Next button") do
+  click_button('Siguiente »')
+end
+
+When("I click the Send button") do
+  click_button('Enviar »')
 end
 
 Then(/^I see the message "([^"]*)"$/) do |string|
@@ -27,10 +37,10 @@ Then(/^I see the message "([^"]*)"$/) do |string|
     end
 end
 
-Then("I see the page calibration form") do
-  message = find(:xpath, '//*[@id="demo"]/div/div[2]/div[1]/div/center/h3')
-  if message.text != "Calibración de páginas"
-    	raise "UCB address should be Calibración de páginas"	
+Then("I see the general report page") do
+  message = find('h2')
+  if message.text != "Reporte General"
+    	raise "UCB address should be Reporte General"	
     end
 end
 
