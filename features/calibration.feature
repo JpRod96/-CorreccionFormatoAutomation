@@ -19,3 +19,4 @@ Scenario: Successful detection of the document's sections
     And I click the Next button
     And I see that the "Anexos" section is disabled
     And I click the Send button
+    Then I see the general report page
