@@ -6,6 +6,7 @@ Background:
     Given I am on the homepage
     When I upload the "documentoCompleto.pdf" file
 
+@regresion
 Scenario: Successful detection of the document's sections    
     And I see that the "Carátula" section is at page 1
     And I click the Next button
