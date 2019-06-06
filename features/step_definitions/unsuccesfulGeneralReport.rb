@@ -1,4 +1,4 @@
-Then("I see an unsuccesful report table") do
+Then("I see an unsuccesful report table as shown below:") do
   infoColumn = 2
   numberOfRows = 4
 
