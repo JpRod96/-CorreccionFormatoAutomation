@@ -11,5 +11,10 @@ Scenario: Showing an unsuccesful page cover report
     Then I see an unsuccesful report table
 
 Scenario: Showing the cover page errors
-    And when I click on the "Caratula" section
-    Then the errors in my essay should appear
+    And when I click on the "Carátula" section
+    Then the error message "Por favor verficar: Fuente: Times New Roman - Tenga Negrilla - Todo esté en mayúsculas." in my essay should appear
+
+
+Scenario: Showing the cover page errors
+    And when I click on the "Carátula" section
+    Then the error message "Por favor verficar: Fuente: Times New Roman." in my essay should appear
