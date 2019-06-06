@@ -44,8 +44,7 @@ Then("I see the general report page") do
 end
 
 Then(/^I see the error message "([^"]*)"$/) do |error|
- message = find(:xpath, '//*[@id="demo"]/div/div[2]/div[2]/div[1]/center/div/center/p')
- if message.text != error
-   	raise "Error message should be "+error	
-   end
+  sleep(10)  
+  message = find('p.alert.alert-danger.myAlert')
+  expect(message.text).to eq error
 end
