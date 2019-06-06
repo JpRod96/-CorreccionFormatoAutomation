@@ -4,9 +4,8 @@ Feature: As a student
 
 Background:
     Given I am on the homepage
-    When I upload the "documentoCompleto.pdf" file
+    When I upload the "documentoIncorrecto.pdf" file
     And I go straight forward trough the calibration setup       
 
-Scenario: Showing a succesful general report
-    Then I see a succesful report table
-
+Scenario: Showing an unsuccesful page cover report
+    Then I see an unsuccesful report table
