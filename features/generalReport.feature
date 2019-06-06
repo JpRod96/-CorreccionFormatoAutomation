@@ -9,3 +9,4 @@ Background:
 
 Scenario: Showing a succesful general report
     Then I see a succesful report table
+
