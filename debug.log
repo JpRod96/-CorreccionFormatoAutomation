@@ -68,3 +68,5 @@
 [0607/115016.151:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
 [0607/120119.898:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
 [0607/120513.584:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0607/125242.900:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0607/125309.414:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
