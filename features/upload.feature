@@ -5,11 +5,13 @@ Feature: As a student
 Background:
     Given I am on the homepage
 
+@regresion
 Scenario: Upload a pdf document
         When I upload the "documentoVacio.pdf" file
         And I go straight forward trough the calibration setup       
         Then I see the general report page
 
+@regresion
 Scenario: Failing Upload with a non pdf archive
         When I upload the "notAPdfFile.exe" file
         Then I see the error message "¡Lo siento! Seleccione un archivo PDF por favor."
