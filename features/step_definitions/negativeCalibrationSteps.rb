@@ -13,4 +13,12 @@ end
 Then("I see the {string} message") do |message|
    expect(page.find(".scrollable p").text).to eq message
 end
+
+When("I leave the page's number field in blank") do
+    page.find_field("coverPage").set ""
+  end
+  
+  Then("I'm still on the cover page setup") do
+    expect(page.find("h4").text).to eq "Carátula"
+  end
   
