@@ -8,8 +8,7 @@ Scenario: Showing the page number errors
     And I upload the "paginacionCentroAbajo.pdf" file 
     And I go straight forward trough the calibration setup    
     When I click on the "Paginación" section
-    Then the error message "Por favor verficar: Tenga alineación al margen derecho." in my essay should appear
+    Then the error message in the section should be: "Por favor verficar: Tenga alineación al margen derecho." 
     #BUG
     #Actual: Por favor verficar: Tenga alineación al margen derecho - Número de página debería ser 5.
     #Expected: Por favor verficar: Tenga alineación al margen derecho.
-    
