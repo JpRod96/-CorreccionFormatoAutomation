@@ -1,4 +1,4 @@
-Feature: Error section Indice Tablas and Indice Figuras
+Feature: Rare Errors in Indice Figuras section
    As a Student
    I want to see in the general report the error section Paginación
    So I know what I need to fix in my document
@@ -22,7 +22,7 @@ Scenario: Showing an error message, validating Indice Figuras should be numbered
     #Actual: 
     #Expected: Por favor verficar: Figuras Deben numerarse correlativamente (Figura 1, Figura 2, Figura 3, etc)
    
-Scenario: Showing an error message, validating Indice Figuras should be numbered 
+Scenario: Showing an error message, Indice Figuras validating alignment
     When I click on the "Índice de Figuras" section
     Then the error message for figure index should be: "Por favor verficar: Alineado al margen izquierdo." 
     #BUG
