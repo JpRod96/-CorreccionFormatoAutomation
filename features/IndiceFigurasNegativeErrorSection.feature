@@ -1,7 +1,7 @@
-Feature: Rare Errors in Indice Figuras section
-   As a Student
-   I want to see in the general report the error section Paginación
-   So I know what I need to fix in my document
+Feature: Diverse Errors in Indice Figuras section
+As a Student
+I want to see in the general report the error section Indice Figuras
+So I know what I need to fix in my document
 
 Background:
     Given I am on the homepage

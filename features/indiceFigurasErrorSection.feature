@@ -1,10 +1,9 @@
 Feature: Error section Indice de Figuras
+As a Student
+I want to see in the general report the error section Indice de Figuras
+So I know what I need to fix in my document
 
-   As a Student
-   I want to see in the general report the error section Indice de Figuras
-   So I know what I need to fix in my document
-
-   Scenario: Showing the index figures page errors validating all possible errors (two errors)
+   Scenario: Showing the index figures page errors 
     Given I am on the homepage
     And I upload the "documentoCompleto.pdf" file 
     And I go straight forward trough the calibration setup  

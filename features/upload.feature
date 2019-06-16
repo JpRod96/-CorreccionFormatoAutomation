@@ -1,6 +1,7 @@
-Feature: As a student
-        I want to upload my report/essay/thesis
-        So that I could get the observations/errors in my report/essay/thesis based on UCB document format
+Feature: Upload report/essay/thesis
+As a student
+I want to upload my report/essay/thesis
+So that I could get the observations/errors in my report/essay/thesis based on UCB document format
 
 Background:
     Given I am on the homepage
