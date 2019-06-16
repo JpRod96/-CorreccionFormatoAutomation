@@ -1,6 +1,7 @@
-Feature: As a student
-        I want the see the general report
-        So I know what I need to fix in my document
+Feature: Caratula error Section
+As a student
+I want to see in the general report the error section Caratula
+So I know what I need to fix in my document
  
 
 Scenario: Showing the cover page errors (7 errors)

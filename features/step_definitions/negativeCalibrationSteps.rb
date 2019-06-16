@@ -1,12 +1,12 @@
-When("I puts {string} on the page's number field") do |misInput|
-    page.find_field("coverPage").native.send_keys(misInput)
+When("I put {string} on the page's number field") do |message|
+    page.find_field("coverPage").native.send_keys(message)
 end
   
 Then("the system leaves the field in blank") do
     expect(find_field("coverPage").value).to eq ""
 end
 
-When("I puts {int} on the page's number field") do |pageNumber|
+When("I put {int} on the page's number field") do |pageNumber|
     page.find_field("coverPage").native.send_keys(pageNumber)
 end
   

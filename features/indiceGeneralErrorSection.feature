@@ -1,6 +1,7 @@
-Feature: As a student
-        I want the see the general report
-        So I know what I need to fix in my document
+Feature: Errors in Indice General section
+As a student
+I want to see in the general report the error section Indice General
+So I know what I need to fix in my document
 
 Background:
     Given I am on the homepage
@@ -26,5 +27,3 @@ Scenario: Showing the correct index page errors (3rd and 4th error)
     When I click on the "Índice General" section
     Then the error message "Por favor verficar: Fuente: Times New Roman - Tamaño de la letra sea: 12 puntos - Tenga Negrilla - No todo esté en mayúsculas." in my essay should appear
     And the error message "Por favor verficar: Esta sección no tenga numeración." in my essay should appear
-
-#AUMENTAR MAS COMBINACIONES DE ERRORES INDIVIDUALES

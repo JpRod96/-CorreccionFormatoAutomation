@@ -1,5 +1,4 @@
 Feature: Error section Extranjerismo (Inglés)
-
    As a Student
    I want to see in the general report the error section Extranjerismo (Inglés)
    So I know what I need to fix in my document

@@ -1,6 +1,7 @@
-Feature: As a student
-        I want the see the general report
-        So I know what I need to fix in my document
+Feature: Succesful general report
+As a student
+I want the see the general report
+So I know what I need to fix in my document
    
 Scenario: Showing a succesful general report
     Given I am on the homepage
