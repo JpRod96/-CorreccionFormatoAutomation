@@ -13,10 +13,10 @@ Scenario: Showing the tables and figures errors validating principle title error
  
 Scenario: Showing the tables and figures errors validating subsection title errors (2nd error)
     When I click on the "Tablas y Figuras" section
-    Then the error message for the next error present in tables should be: "Enumerar correlativamente a lo largo del texto (Tabla 1, Tabla 2, Tabla 3, etc.) - llevar a la parte central superior - Fuente: Times New Roman - Tamaño de la letra sea: 12 puntos - Tenga Negrilla." 
+    Then the error message for the next error present in tables should be: "Enumerar correlativamente a lo largo del texto (Tabla 1, Tabla 2, Tabla 3, etc.) - Llevar a la parte central superior - Fuente: Times New Roman - Tamaño de la letra sea: 12 puntos - Tenga Negrilla." 
     #BUG
     #Actual: 
-    #Expected: Enumerar correlativamente a lo largo del texto (Tabla 1, Tabla 2, Tabla 3, etc.) - llevar a la parte central superior - Fuente: Times New Roman - Tamaño de la letra sea: 12 puntos - Tenga Negrilla.
+    #Expected: Enumerar correlativamente a lo largo del texto (Tabla 1, Tabla 2, Tabla 3, etc.) - Llevar a la parte central superior - Fuente: Times New Roman - Tamaño de la letra sea: 12 puntos - Tenga Negrilla.
 
 Scenario: Showing the tables and figures errors validating principle title errors (should be 3rd error)
     When I click on the "Tablas y Figuras" section
@@ -25,10 +25,10 @@ Scenario: Showing the tables and figures errors validating principle title error
  
  Scenario: Showing the tables and figures errors validating subsection title errors (should be 4th error)
     When I click on the "Tablas y Figuras" section
-    Then the error message for fuente in tables should be: "Por favor verficar: llevar fuente a la parte central inferior - Debe contener el año ej 1997 - No tenga negrilla." 
+    Then the error message for fuente in tables should be: "Por favor verficar: Llevar fuente a la parte central inferior - Debe contener el año ej 1997 - No tenga negrilla." 
     #BUG
     #Actual: Por favor verficar: No tenga negrilla.
-    #Expected: Por favor verficar: llevar fuente a la parte central inferior - Debe contener el año ej 1997 - No tenga negrilla. 
+    #Expected: Por favor verficar: Llevar fuente a la parte central inferior - Debe contener el año ej 1997 - No tenga negrilla. 
 
 Scenario: Showing the tables and figures errors validating principle title errors (1st error)
     When I click on the "Tablas y Figuras" section
@@ -38,10 +38,10 @@ Scenario: Showing the tables and figures errors validating principle title error
  
  Scenario: Showing the tables and figures errors validating subsection title errors (should be 4th error)
     When I click on the "Tablas y Figuras" section
-    Then the error message for the next error present in tables should be: "Por favor verficar: llevar título en la parte central superior - Tenga Negrilla." 
+    Then the error message for the next error present in tables should be: "Por favor verficar: Llevar título en la parte central superior - Tenga Negrilla." 
     #BUG
     #Actual: 
-    #Expected: Por favor verficar: llevar título en la parte central superior - Tenga Negrilla.
+    #Expected: Por favor verficar: Llevar título en la parte central superior - Tenga Negrilla.
 
 Scenario: Showing the tables and figures errors validating subsection title errors (should be 4th error)
     When I click on the "Tablas y Figuras" section
@@ -59,7 +59,7 @@ Scenario: Showing the tables and figures errors validating principle title error
 
 Scenario: Showing the tables and figures errors validating principle title errors (1st error)
     When I click on the "Tablas y Figuras" section
-    Then the error message for the next error present in tables should be: "Por favor verficar: llevar fuente a la parte central inferior."
+    Then the error message for the next error present in tables should be: "Por favor verficar: Llevar fuente a la parte central inferior."
     #BUG
     #Actual: 
-    #Expected: Por favor verficar: llevar fuente a la parte central inferior.
+    #Expected: Por favor verficar: Llevar fuente a la parte central inferior.
